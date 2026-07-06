@@ -1,0 +1,2485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap demo</title>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+  button :hover{ 
+    border-color: dodgerblue;
+    }
+    .swalih{
+      border: 1px solid rgb(158, 154, 154);
+      width: 30px;
+      height: 35px;
+      margin-left: 10px;
+      border-radius: 5px;
+      width: 100;
+      padding: 5px;
+      font-size: 20px;
+      margin-right: 15px;
+      
+    }
+    .hlo{
+      height: 50px;
+    }
+    .banner img{
+
+      height: 450px;
+      object-fit: cover;
+    }
+    .banner-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel{
+    overflow: hidden;
+}
+.carousel-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.carousel-item{
+    padding: 0 40px;
+}
+
+.carousel-item img{
+    width: 90%;
+    height: 550px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 15px;
+}
+.swiper {
+  width: 100%;
+  padding: 0 40px;
+    overflow: visible !important;
+
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.bannerSwiper .swiper-slide img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    width: 35px;
+    height: 35px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    color: white;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 12px;
+}
+
+
+
+/* another */
+.productSwiper {
+  padding: 20px 40px;
+}
+
+.productSwiper .card {
+  border: none;
+  height: 100%;
+}
+
+.product-img {
+  height: 250px;
+  object-fit: contain;
+  background: #f3f4f3;
+}
+
+.swiper-slide {
+  height: auto;
+}
+.productSwiper .swiper-slide{
+    width: 320px !important;
+}
+
+.productSwiper .card{
+    height: 100%;
+    border: none;
+}
+
+.product-img{
+    height: 280px;
+    object-fit: contain;
+    background: #f3f4f3;
+}
+.overSwiper .swiper-slide{
+  padding: 0 5px;
+}
+/* next section */
+
+.banner-card{
+    height:460px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.banner-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.banner-card:hover img{
+    transform: scale(1.1);
+  }
+
+  .demo:hover img{transform: scale(1.1);
+  }
+
+
+  /* footersection */
+
+.footer-section{
+    background: #f5f5f5;
+    padding: 60px 20px 15px;
+}
+
+.footer-section h4{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-section ul li{
+    margin-bottom: 15px;
+}
+
+.footer-section ul li a{
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+}
+
+.footer-section p{
+    font-size: 18px;
+    color: #222;
+    line-height: 1.8;
+}
+
+.copyright{
+    margin-top: 40px;
+    font-size: 18px;
+    color: #222;
+}
+
+</style>
+<body>
+
+  <nav class="navbar  navbar-expand-lg navbar-custom shadow-sm">
+    <div class="container-fluid">
+
+      <p style="color: orange" class="navbar-brand fs-3  ms-5">my<font style="font-weight: 500;">G</font></p>
+      <form   role="search ">
+        
+        <div>
+        <input class="form-control hlo " type="search"  placeholder="search product" style="width: 1000px; height: 40px;">
+      </div>
+      </form>
+      <div class="justify-content-end" style=" display: flex; margin-left: 10px;">
+      <div class="swalih"> <i class="bi bi-bar-chart-fill text-primary me-2" ></i></button></div>
+      <div class="swalih"> <i class="bi bi-heart-fill text-primary me-2" ></i> </div>
+      <div class="swalih"> <i class="bi bi-person-fill text-primary me-2"></i> </div>
+      <div class="swalih"> <i class="bi bi-bag-fill me-2 fill text-primary"></i> </div>
+
+</div>
+      </div>
+  </nav>
+<div class="swiper bannerSwiper" style="margin-top: 20px;">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="mygimage/lap-may29__1_.avif" >
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/Washing-machine-may-29.avif">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/TV-Banner-may-29.avif">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/Main-banners-Smartphones.jpg.avif">
+    </div>
+
+  </div>
+<div class="swiper-button-next banner-next"></div>
+<div class="swiper-button-prev banner-prev"></div>
+</div>
+<br>
+  <h2 style="margin-left: 20px;">Deal of the day</h2><br>
+
+<div class="swiper dealSwiper " style="margin-bottom: 20px;">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="mygimage/Accessories.avif" style="width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/Airpods-pro-3 (1).avif" style="width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/apple-watch.avif" style="width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/REF-WEB.jpg.avif" style="width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+  </div>
+<div class="swiper-button-next deal-next"></div>
+<div class="swiper-button-prev deal-prev"></div>
+</div>
+
+
+
+
+
+<h2 style="font-weight: bold; margin-top: 30px; margin-bottom: 50px;">Latest Launches</h2>
+<div class="swiper overSwiper " style="margin-bottom: 20px;">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="mygimage/lastate1.avif" style="width: 100%;
+  height: 230px;
+   border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/lastate.2.avif" style="width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/lastate.3.avif" style="width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+    <div class="swiper-slide">
+      <img src="mygimage/lastest.4.avif" style="width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+<div class="swiper-slide">
+      <img src="mygimage/lastest5.avif" style="width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+<div class="swiper-slide">
+      <img src="mygimage/lastest.6.avif" style="width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;">
+    </div>
+
+  </div>
+<div class="swiper-button-next deal-next"></div>
+<div class="swiper-button-prev deal-prev"></div>
+</div>
+
+
+
+
+<h2 style="margin-left: 20px; margin-bottom: 20px;"> <strong> Exclusives: just Launched</strong></h2>
+
+<!-- part3 -->
+<div class="swiper productSwiper">
+  <div class="swiper-wrapper">
+
+    <!-- Card 1 -->
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/-original-imahhfwupm5gwydx-removebg-preview_zcet-tx.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/-original-imahm32hfpbz7qzg-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/-original-imahhfwuyxr5vgdq-removebg-preview_a1tg-bs.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/323164_0_T0m38CKpx-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/-original-imahm32hdjsy7wmg-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/-original-imahm32hfpbz7qzg-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/323243_0_28_leCMEl-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/323244_0_hih1jSTQQ-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2">Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+      <div class="card h-100">
+        <img src="mygimage/61IwoHf8yzL._SL1280_-removebg-preview.png.avif"
+             class="card-img-top p-3 product-img">
+
+        <div class="card-body">
+          <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+
+          <div class="d-flex align-items-center gap-2">
+            <h4 class="text-primary mb-0">₹35,000</h4>
+            <span class="badge bg-info text-primary">-36%</span>
+          </div>
+          <P>: MRP<del> 125555</del></P>
+          <p class="mt-2 " style="color: rgb(100, 173, 225);">
+          Vivo Y51 pro 5 |8 GB|12GB|Festive Red|NM
+          </p>
+
+          <p class="text-success">
+            <i class="bi bi-check-circle"></i> In Stock
+          </p>
+
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary flex-grow-1">
+              Add to Cart
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-heart-fill text-primary"></i>
+            </button>
+
+            <button class="btn btn-light border">
+              <i class="bi bi-bar-chart-fill text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Copy this swiper-slide for other products -->
+  </div>
+
+  <div class="swiper-button-next deal-next"></div>
+  <div class="swiper-button-prev deal-prev"></div>
+</div>
+
+<!-- next section -->
+
+
+<!-- <div class="hoverbon" style="display: flex; gap: 20px;">
+  <div class="hoverbim1" style="width: ;"><img src="mygimage/hover1.avif"></div>
+  <div class="hoverbim2" style="width: 500pxpx;"><img src="mygimage/hover2.avif"></div>
+</div> -->
+
+<div class="container-fluid px-4 mb-5">
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <div class="banner-card">
+                <img src="mygimage/hover1.avif" style="width: 100%; object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="banner-card">
+                <img src="mygimage/hover2.avif" style="width: 100%;">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- NEXT SECTION -->
+
+<div class="demo mb-5" >
+  <img  style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="mygimage/hover3.avif" alt="hover3">
+</div>
+
+
+<!-- another section -->
+
+
+     <div class="row mb-3 " style="margin-left: 30px;">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washohmachine1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div> 
+        
+        </div>
+        
+         <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmechine2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+         </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washing machine4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+</div>
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock 
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover4.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+<!-- anotersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washohmachine1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div> 
+        
+        </div>
+        
+         <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmechine2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+         </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washing machine4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+</div>
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover5.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+<!-- anothersection -->
+
+
+<div class="row mb-3 " style="margin-left: 30px;">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washohmachine1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div> 
+        
+        </div>
+        
+         <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmechine2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+         </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washing machine4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+</div>
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover6.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+
+<!-- anotersection -->
+
+
+
+<div class="row mb-3 " style="margin-left: 30px;">
+        <div class="col">
+          
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washohmachine1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div> 
+        
+        </div>
+        
+         <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmechine2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+         </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washing machine4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washingmachine5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+        </div>
+</div>
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover7.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+<!-- anothersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine7.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/washig machine10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover8.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+<!-- anothersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2">Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+<!-- anothersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+          
+           <img src="mygimage/appliance6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/applia.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance11.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/appliance12.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/applance13.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/applance14.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/applance15.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="demo mb-5" >
+  <img  src="mygimage/hover9.avif" style="width: 1450px; border-radius: 10px; margin-left: 30px;"src="ho" alt="hover3">
+</div>
+
+<!-- anothersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery1.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery2.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery3.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery4.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery5.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+<!-- anothersection -->
+
+<div class="row mb-3 " style="margin-left: 30px;"">
+        <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery6.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>   
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery7.avif"class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery8.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light border"><i class="bi bi-bar-chart-fill text-primary"></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery9.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card" style="width: 15rem; height: 30rem;">
+           <img src="mygimage/crokery10.avif" class="card-img-top" alt="path is wrong"style="background-color: #f3f4f3;"> 
+           <div class="card-body">
+            <span class="badge bg-success mb-2"> 2Fast Delivery</span>
+            <div style="display: flex; gap: 10px; "><h4 style="color: rgb(80, 133, 208);">35,0000</h4><p style="background-color: rgb(46, 180, 242); color: blue;">-36%</p></div>
+            <p class="halo">blue star inverter split AC |1.5 ton|3 star|white| IA 318EXU</p>
+            <div><p class="text-success fs-10">
+                        <i class="bi bi-check-circle"></i>In stock
+                      </p></div>
+                      <button class="btn btn-primary mb-9" type="button">Add to chart</button>
+                      <div class="btn btn-light border"> <i class="bi bi-heart-fill text-primary"></i></div>
+                      <div class="btn btn-light boreder"><i class="bi bi-bar-chart-fill text-primary"></i></i></div>
+                      
+
+        </div>
+        </div>
+      </div>
+
+</div>
+
+
+
+<!-- footersection -->
+
+<footer class="footer-section">
+  <div class="container-fluid px-4">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Buyer's Account</h4>
+
+        <ul class="list-unstyled">
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Wish list</a></li>
+          <li><a href="#">Comparison list</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h4>Shop</h4>
+
+        <ul class="list-unstyled">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Corporate</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h4>Contacts</h4>
+
+        <p>myG Online Private Limited</p>
+
+        <p>
+          KKK Green Tower, Kuthiravattom,<br>
+          Puthiyara, Kozhikode
+        </p>
+
+        <p>+919249001001</p>
+
+        <p>sales@myg.in</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2006 - 2026 myG Online Private Limited | myG Online
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+var bannerSwiper = new Swiper(".bannerSwiper", {
+    slidesPerView: 1.2,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+    },
+    navigation: {
+        nextEl: ".banner-next",
+        prevEl: ".banner-prev",
+    }
+});
+
+var dealSwiper = new Swiper(".dealSwiper", {
+    slidesPerView: 1.2,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: ".deal-next",
+        prevEl: ".deal-prev",
+    }
+});
+
+
+
+var dealSwiper = new Swiper(".overSwiper", {
+    slidesPerView: 1.2,
+    centeredSlides: true,
+    
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: ".deal-next",
+        prevEl: ".deal-prev",
+    }
+});
+
+
+
+var productSwiper = new Swiper(".productSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,
+    speed: 2000,
+
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});
+
+
+
+
+   
+</script>
+</body>
+</html>
